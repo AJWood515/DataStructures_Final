@@ -39,7 +39,7 @@ public class Courses {
 	}
 	@Override
 	public String toString() {
-		return "Courses [name=" + name + ", letterCode=" + letterCode + ", numberCode=" + numberCode + "]";
+		return " [Course: " + name + ", Letter and Number Code: " + letterCode + " " + numberCode + "]";
 	}
 	
 	

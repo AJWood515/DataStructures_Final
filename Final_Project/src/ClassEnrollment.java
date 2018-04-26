@@ -11,21 +11,26 @@ public class ClassEnrollment {
 		Student Becca = new Student("Rebecca", "Smith", 19);
 		Student Tank = new Student("Tank", "Wood", 24);
 		
-		LinkedList studentsList = new LinkedList();
-		
-		studentsList.insert(Tank);
-		studentsList.insert(Becca);
-		studentsList.insert(Jeff);
-		studentsList.displayList();
-		
 		Courses Java = new Courses("Java", "CIS", 152);
 		Courses PHP = new Courses("PHP", "WDV", 341);
 		Courses SQL = new Courses("SQL", "CIS", 338);
 		
+		LinkedList TanksSchedule = new LinkedList();
+		TanksSchedule.insert(Java);
+		TanksSchedule.insert(PHP);
+		TanksSchedule.insert(SQL);
+		Tank.displayStudent();
+		TanksSchedule.displayList();
 		
-		LinkedList JavaCourse = new LinkedList();
+		LinkedList BeccaSchedule = new LinkedList();
+		BeccaSchedule.insert(PHP);
+		BeccaSchedule.insert(SQL);
+		Becca.displayStudent();
+		BeccaSchedule.displayList();
+		Becca.insert(SQL);
+		Becca.displayList();
+		Becca.displayStudent();
 		
-
 	}
 
 }

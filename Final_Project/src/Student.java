@@ -1,13 +1,9 @@
 
-public class Student {
+public class Student extends LinkedList{
 
 	private String fName;
 	private String lName;
 	private int Age;
-	
-	public Student(){
-		
-	}
 	
 	public Student(String fName, String lName, int age) {
 		setfName(fName);
@@ -38,7 +34,11 @@ public class Student {
 	public void setAge(int age) {
 		Age = age;
 	}
-
+	public void displayStudent() {
+		System.out.println("Student: " + fName + " " + lName + " "+ "Age: " + Age);
+		displayList();
+	}
+	
 	@Override
 	public String toString() {
 		return "Student [fName=" + fName + ", lName=" + lName + ", Age=" + Age + "]";
