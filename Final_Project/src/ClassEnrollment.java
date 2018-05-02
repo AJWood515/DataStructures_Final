@@ -9,7 +9,9 @@
 public class ClassEnrollment {
 
 	public static void main(String[] args) {
-	
+	/**
+	 * Course List 
+	 */
 		Courses JavaII = new Courses("Java 2", "CIS", 175, "Spring ", "Kleindorfer");
 		Courses Data = new Courses("DataStructures", "CIS", 152, "Spring ", "Ruse");
 		Courses PHP = new Courses("Intro to PHP", "WDV", 341, "Spring ", "Gullion");
@@ -18,7 +20,9 @@ public class ClassEnrollment {
 		Courses Comp = new Courses("Composition I", "ENG", 105, "Fall","Zhang");
 		Courses Mobile = new Courses("Survey of Mobile Technology", "MDT", 101, "Summer", "Sanders");
 		
-		
+		/**
+		 * Student Rebecca
+		 */
 		Student Becca = new Student();
 		Becca.setMajor("Business Info Systems");
 		Becca.setId(123456);
@@ -31,6 +35,9 @@ public class ClassEnrollment {
 		Becca.insert(PHP);
 		Becca.displayStudent();
 		System.out.println("*********************************");
+		/**
+		 * Student Tank
+		 */
 		Student Tank = new Student(987456, "Tank", "Wilson", 64, 38,"Liberal Arts");
 		Tank.insert(Java);
 		Tank.insert(PHP);
@@ -38,6 +45,9 @@ public class ClassEnrollment {
 		Tank.insert(Data);
 		Tank.displayStudent();
 		System.out.println("*********************************");
+		/**
+		 * Student Bob
+		 */
 		Student Bob = new Student(456123,"Robert","Fox", 32, 30,"Web Development Certificate");
 		Bob.insert(CSharp);
 		Bob.insert(PHP);
@@ -45,15 +55,18 @@ public class ClassEnrollment {
 		Bob.insert(JavaII);
 		Bob.displayStudent();
 		System.out.println("*********************************");
+		/**
+		 * Insertion Sort
+		 */
 		int maxSize = 100;
 		InsertionSort list = new InsertionSort(maxSize);
 		list.insert(Bob);
 		list.insert(Tank);
 		list.insert(Becca);
-		System.out.println("Before sort:");
+		System.out.println("*Before sort:*");
 		list.display();
 		list.insertionSort();
-		System.out.println("After sort:");
+		System.out.println("*After sort:*");
 		list.display();
 	}
 
